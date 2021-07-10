@@ -8,12 +8,10 @@ using Oxide.Core.Plugins;
 
 namespace Oxide.Plugins
 {
-    [Info("PrivateMessages", "Kopter/MisterPixie", "1.2.11")]
+    [Info("PrivateMessages", "Kopter", "1.2.11")]
     [Description("Allows users to send private messages to each other")]
     class PrivateMessages : CovalencePlugin
     {
-        //Max Characters Added By Kopter
-
         private readonly Dictionary<string, string> pmHistory = new Dictionary<string, string>();
         private Dictionary<string, double> cooldown = new Dictionary<string, double>();
         private List<LastFivePms> lastFivePms = new List<LastFivePms>();
